@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/registerrootlayout"
+    tools:context="com.mytrintrin.www.pbs_gadag.RegisterActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerview">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registertoolbar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerview">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_loginlogo"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_singleLineEllipsis="true"
+                android:maxLength="30"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Last Name (optional)"
+                    android:inputType="text"
+                    android:letterSpacing="0.025"
+                    android:text=""
+                    android:maxLength="30"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Mobile Number"
+                    android:inputType="text"
+                    android:letterSpacing="0.025"
+                    android:text=""
+                    android:maxLength="30"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.025"
+                    android:text=""
+                    android:maxLength="40"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/edtEmail"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.025"
+                    android:text=""
+                    android:maxLength="15"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_singleLineEllipsis="true"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimary" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/edtEmail"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.025"
+                    android:text=""
+                    android:maxLength="15"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_singleLineEllipsis="true"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimary" />
+
+                <CheckBox
+                    android:id="@+id/cbShowPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtPassword"
+                    android:layout_alignStart="@+id/edtPassword"
+                    android:layout_below="@+id/edtPassword"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:text="Show Password" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtAadharNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Aadhar Number"
+                    android:inputType="number"
+                    android:letterSpacing="0.025"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    app:met_baseColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_singleLineEllipsis="true"
+                    android:maxLength="12"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background"
+                    android:text="Sign Up"
+                    android:onClick="validatecredentials"
+                    android:textColor="@drawable/btn_text"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
